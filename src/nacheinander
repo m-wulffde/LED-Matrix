@@ -1,0 +1,54 @@
+#include <Arduino.h>
+#include <FastLED.h>
+
+#define NUM_STRIPS 1  // Streifen Anzahl [3]
+#define NUM_LEDS_PER_STRIP 61
+CRGB leds[NUM_STRIPS][NUM_LEDS_PER_STRIP];
+
+// For mirroring strips, all the "special" stuff happens just in setup.  We
+// just addLeds multiple times, once for each strip
+void setup() {
+  // tell FastLED there's 60 NEOPIXEL leds on pin 10
+  FastLED.addLeds<NEOPIXEL, 1>(leds[0], NUM_LEDS_PER_STRIP);
+}
+
+void loop() { 
+  // This outer loop will go over each strip, one at a time
+  for(int x = 0; x < NUM_STRIPS; x++) {
+    // This inner loop will go over each led in the current strip, one at a time
+    for(int i = 0; i < NUM_LEDS_PER_STRIP; i++) {
+      leds[x][i] =  CRGB(10,0,0);  // Rot
+      FastLED.show();
+      // leds[x][i] = CRGB::Black;
+      delay(100);
+    }
+    for(int i = 0; i < NUM_LEDS_PER_STRIP; i++) {
+      leds[x][i] = CRGB(0,10,0);   // Grün
+      FastLED.show();
+     // leds[x][i] = CRGB::Black;
+      delay(100);
+    }
+    leds[x][0] =  CRGB(10,0,0);  // Rot
+    FastLED.show();
+    delay(1000);
+    for(int i = 0; i < NUM_LEDS_PER_STRIP; i++) {
+      leds[x][i] = CRGB(0,0,10);   // Blau
+      FastLED.show();
+     // leds[x][i] = CRGB::Black;
+      delay(100);
+    }
+    for(int i = 0; i < NUM_LEDS_PER_STRIP; i++) {
+      leds[x][i] = CRGB(5,5,5);   // Weiß
+      FastLED.show();
+     // leds[x][i] = CRGB::Black;
+      delay(100);
+    }
+    for(int i = 0; i < NUM_LEDS_PER_STRIP; i++) {
+      leds[x][i] =  CRGB(10,0,0);  // Rot
+      FastLED.show();
+      leds[x][i] = CRGB::Black;
+      delay(100);
+    }
+  
+  }
+}
