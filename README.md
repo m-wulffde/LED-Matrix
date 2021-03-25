@@ -4,6 +4,6 @@ Das Ziel des Projektes ist eine LED-Matrix aus Tischtennisbällen die mit WS2812
 
 Sprache:  C++ über PlatformIO
 
-Weitere Informationen:
+*Weitere Informationen mit ausführlicher Anleitung zur Hardware und schrittweiser Aufbau:* <br>
 http://www.m-wulff.de/esp/projekt-matrix/index.php
 
