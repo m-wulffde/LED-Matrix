@@ -155,14 +155,14 @@ void HG_LR (short Rstart, short Rende, short Gstart, short Gende, short Bstart, 
         if (Richtung == 'K') {    
           LEDs[LEDMatrixK[i][j]] = CRGB(Rot,Gruen,Blau);  // einzelne LED setzen
         }
-        // FastLED.show();
-        // delay(1);
+        FastLED.show();
+        delay(1);
       }
       // FastLED.show();
       // delay(2);
     }
-     FastLED.show();
-     delay(100);
+    // FastLED.show();
+    // delay(100);
   }
 }
 
