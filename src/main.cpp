@@ -1,5 +1,7 @@
+// -----------------------------------------------
 // Projekt: LED Matrix mit Tischtennisbällen groß
 // -----------------------------------------------
+// Verion 0.1.1  Einfache Funktion von Links 
 
 #include <Arduino.h>
 #include <FastLED.h>
