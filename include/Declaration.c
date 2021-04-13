@@ -48,8 +48,8 @@ short LEDMatrixL [Spalten] [SpaltenLED] = {   // LED-Matrix von links
 };
 
 #define Kreise 10                              // 5 Kreise Anzahl
-#define KreiseLED 56                         // 24 LED Anzahl pro Kreise 
-short LEDMatrixK [Kreise] [KreiseLED] = {     // LED-Matrix nach Innen
+#define KreiseLED 56                           // 24 LED Anzahl pro Kreise 
+short LEDMatrixK [Kreise] [KreiseLED] = {      // LED-Matrix nach Innen
   {  1,  0,  4,  3, 11, 10, 22, 21, 37, 36, 55, 74, 93,112,131,150,169,188,207,226,245,246,262,263,275,276,284,285,
    289,287,288,282,283,273,274,260,261,244,225,206,187,168,149,130,111, 92, 73, 54, 53, 35, 34, 20, 19,  9,  8,  2},
   {  6,  5, 13, 12, 24, 23, 39, 38, 56, 75, 94,113,132,151,170,189,208,227,228,247,248,264,265,277,278,286,280,281,

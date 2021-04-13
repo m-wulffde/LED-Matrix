@@ -10,7 +10,6 @@
 #include <Background.c>
 
 
-
 void setup() {
   Serial.begin(115200);
   Serial.println("Start");
@@ -20,33 +19,6 @@ void setup() {
   FastLED.setBrightness(Helligkeit);                      // Stellen Sie die Master-Helligkeitsregelung ein
 }
 
-
-
-
-
-// ****************************************************************************************************************************
-// Zeichen anzeigen
-// Logo M W 
-const int Digits [2] [11] =
-{
-  {6,5,12,11,21,22,30,29,39,40,50},   
-  {14,15,25,26,34,33,43,44,52,51,57},
-};
-
-void Logo(){
-
-  CRGB LED[2];
-  LED[1] = LEDs[54];
-  // LED[2] = LEDs[10];
-
-  HG_Farbe (15, 0, 15);
-  
-  for (int i = 0 ; i < 11 ; i++) {
-    LEDs[(Digits[0][i])] = LED[1];
-   // LEDs[(Digits[1][i])] = LED[2];
-  }
-  //LEDs[6] = CRGB(200,0,200);
-}
 
 // ****************************************************************************************************************************
 // Hauptschleife
@@ -69,7 +41,8 @@ for(int i = 0; i < NUM_LEDS; i++) {
   // Logo();
    
   // HG_Farbe (0, 0, 0);
-  // HG_LR (40,0,0,0,0,40,'L',2);                           // Startwert, Endwert nach RGB, Richtung, Schrittgröße 
+  // Logo (50,0,0);
+  HG_LR (40,0,0,0,0,40,'L',2);                           // Startwert, Endwert nach RGB, Richtung, Schrittgröße 
   
                                                             // Rot-Start,Rot-Ende, Grün-Start,Grün-Ende, Blau-Start,BlauEnde, Richtung, SG 
                                                             // HG_LR (40,0,0,0,0,40,'L',2);  1 Farbe  / Dunkel
@@ -80,6 +53,6 @@ for(int i = 0; i < NUM_LEDS; i++) {
                                                             //  HG_LR (0,36,0,0,36,0,'K',6);
 
  
-  // FastLED.show();
-  // delay(10000);
+  FastLED.show();
+  delay(10000);
 }
