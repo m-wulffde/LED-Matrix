@@ -24,25 +24,13 @@ void setup() {
 // Hauptschleife
 // ****************************************************************************************************************************
 void loop() { 
-/*
-for(int i = 0; i < NUM_LEDS; i++) {
-    LEDs[i] = CRGB(0,0,100);
-    FastLED.show();
-    delay(1);
-  }
 
-for(int i = 0; i < NUM_LEDS; i++) {
-    LEDs[i] = CRGB(100,0,0);
-    FastLED.show();
-    delay(1);
-  }
-*/
   // Regenbogen();
   // Logo();
    
   // HG_Farbe (0, 0, 0);
   // Logo (50,0,0);
-  HG_LR (40,0,0,0,0,40,'L',2);                           // Startwert, Endwert nach RGB, Richtung, Schrittgröße 
+  HG_LR (40,0,0,0,0,40,'L',2);                              // Startwert, Endwert nach RGB, Richtung, Schrittgröße 
   
                                                             // Rot-Start,Rot-Ende, Grün-Start,Grün-Ende, Blau-Start,BlauEnde, Richtung, SG 
                                                             // HG_LR (40,0,0,0,0,40,'L',2);  1 Farbe  / Dunkel
@@ -54,5 +42,5 @@ for(int i = 0; i < NUM_LEDS; i++) {
 
  
   FastLED.show();
-  delay(10000);
+  delay(100);
 }

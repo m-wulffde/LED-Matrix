@@ -109,7 +109,7 @@ void HG_LR (short Rstart, short Rende, short Gstart, short Gende, short Bstart, 
       }
       Logo (0,30,0);
       FastLED.show();
-      delay(300);
+      delay(30);
     }
     // FastLED.show();
     // delay(100);
