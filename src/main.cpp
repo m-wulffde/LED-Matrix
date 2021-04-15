@@ -42,7 +42,6 @@ void loop() {
                                           // HG_LR (80,0,40,0,0,80,'L',4); 3 Farben / hell                
   HG_LR (0,36,0,0,36,0,'K',6);            // Startwert, Endwert nach RGB, Richtung, Schrittgröße
                                           //  HG_LR (0,36,0,0,36,0,'K',6);
-
  
   FastLED.show();
   delay(1000);
