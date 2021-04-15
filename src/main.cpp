@@ -29,20 +29,19 @@ void loop() {
      
   HG_Farbe (0, 0, 0);
   // Logo (50,0,0);
-  for (int i = 0 ; i < 30 ; i++) {                          // Christmas, Tannenbaum
+  for (int i = 0 ; i < 30 ; i++) {        // Christmas, Tannenbaum
     Christmas();
     FastLED.show();
     delay(800);
   }
-  HG_LR (40,0,0,0,0,40,'L',2);                              // Startwert, Endwert nach RGB, Richtung, Schrittgröße 
-  
-                                                            // Rot-Start,Rot-Ende, Grün-Start,Grün-Ende, Blau-Start,BlauEnde, Richtung, SG 
-                                                            // HG_LR (40,0,0,0,0,40,'L',2);  1 Farbe  / Dunkel
-                                                            // HG_LR (80,0,0,0,0,80,'L',4);  1 Farbe  / hell
-                                                            // HG_LR (40,0,0,0,0,40,'L',4);  2 Farben / Dunkel  
-                                                            // HG_LR (80,0,40,0,0,80,'L',4); 3 Farben / hell                
-  HG_LR (0,36,0,0,36,0,'K',6);                              // Startwert, Endwert nach RGB, Richtung, Schrittgröße
-                                                            //  HG_LR (0,36,0,0,36,0,'K',6);
+  HG_LR (40,0,0,0,0,40,'L',2);            // Startwert, Endwert nach RGB, Richtung, Schrittgröße 
+                                          // Rot-Start,Rot-Ende, Grün-Start,Grün-Ende, Blau-Start,BlauEnde, Richtung, SG 
+                                          // HG_LR (40,0,0,0,0,40,'L',2);  1 Farbe  / Dunkel
+                                          // HG_LR (80,0,0,0,0,80,'L',4);  1 Farbe  / hell
+                                          // HG_LR (40,0,0,0,0,40,'L',4);  2 Farben / Dunkel  
+                                          // HG_LR (80,0,40,0,0,80,'L',4); 3 Farben / hell                
+  HG_LR (0,36,0,0,36,0,'K',6);            // Startwert, Endwert nach RGB, Richtung, Schrittgröße
+                                          //  HG_LR (0,36,0,0,36,0,'K',6);
 
  
   FastLED.show();
